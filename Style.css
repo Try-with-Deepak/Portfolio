@@ -28,7 +28,7 @@
 
     }
 
-    .portimg {
+    .porting {
         filter: drop-shadow(6px 1px 100px #192026);
     }
 
@@ -42,10 +42,11 @@
         font-size: 15px;
         background-color: red;
         color: white;
-        padding: 4px;
+        padding: 5px 13px;
         border: none;
         border-radius: 5px;
         box-shadow: -3px -3px 0px rgb(0, 0, 0, 0.3);
+        margin-right: 50px;
     }
 
     .Btn_1:hover {
@@ -60,7 +61,7 @@
         padding: 4px;
         border: none;
         border-radius: 5px;
-        margin-left: 5px;
+        margin-left: 50px;
         box-shadow: 3px 3px 0px rgb(0, 0, 0, 0.3);
     }
 
@@ -68,7 +69,6 @@
         background-color: black;
         color: white;
         transition: all 0.2s ease-in-out;
-
     }
 
     .image img {
@@ -82,35 +82,7 @@
         background-color: white !important;
     }
 
-
-    /* Footer_Area */
-
-    .Footer_Background {
-        position: relative;
-        /* needed for pseudo-element */
-        height: 300px;
-        overflow: hidden;
-        /* hides blur overflow */
-    }
-
-    .Footer_Background::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        /* covers the entire div */
-        background: url("foot_bg.jpeg") center/cover no-repeat;
-        filter: blur(5px);
-        /* background blur */
-        z-index: -1;
-        /* behind content */
-        opacity: 0.8;
-    }
-
-
-    /* background: linear-gradient(rgb(255, 0, 0,0.8), white ); */
-
-    /* MYSKILLS */
-
+      /* MYSKILLS */
 
     .MySkills {
         background-color: #192026;
@@ -150,8 +122,63 @@
         object-fit: contain;
     }
 
-    .MyProjects {
+    /* Skill Specific Backgrounds */
+    .skill-html {
+        background: linear-gradient(135deg, #3776ab, #ff6b35);
+    }
+    .skill-python {
+        background: linear-gradient(135deg, #3776ab, #ff6b35);
+    }
+
+    .skill-git {
+        background: linear-gradient(135deg, #f7931e, #007396);
+    }
+
+    .skill-sql {
+        background: linear-gradient(135deg, #154753, #9a9292);
+    }
+
+    .skill-Networking{
+        background: linear-gradient(135deg, #643333, #184744);
+    }
+
+    .skill-css {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+       .skill-bootstrap {
+        background: linear-gradient(135deg, #7b45c2, #6d6677);
+    }
+
+    .skill-js {
+        background: linear-gradient(135deg, #f7df1e, #ffd700);
+    }
+
+    /* .skill-AWS {
+        background: linear-gradient(135deg, #787cb4, #4f5bd5);
+    } */
+
+    .skill-ps {
+        background: linear-gradient(135deg, #282828, #00d4ff);
+    }
+
+       /* .skill-docker {
+        background: linear-gradient(135deg, #2496ed, #0a9fd9);
+    } */
+
+      .skill-React-js {
+        background: linear-gradient(135deg, #1e2021, #a4a8a9);
+    }
+
+
+                             /* MY_PROJECTS */
+    .Projects{
+        background:linear-gradient(#007396,#154753);
+    }
+
+    .MyProjects123 {
         width: 100%;
+           
     }
 
     .MyProjects>.col>div {
@@ -177,167 +204,92 @@
         transition: all 0.9s ease-in-out;
         font-size: 20px !important;
     }
+            /* CONTACTS */
+    .Contacts{
+        background-image: url("foot_bg.jpeg");
+        /* filter: blur(5px); */
+        object-fit:fill;
+        color:white;
+        background-attachment: fixed;
+        
 
+    }
+    .Contacts input ,.Contacts textarea{
+        width: 50%;
+        margin: 0 auto;
+    }      
+    /* Footer_Area */
 
-
-
-    /* Skill Specific Backgrounds */
-    .skill-python {
-        background: linear-gradient(135deg, #3776ab, #ff6b35);
+    .Footer_Background {
+        /* position: relative; */
+        /* needed for pseudo-element */
+        /* height: 300px;
+        overflow: hidden; */
+        /* hides blur overflow */
+        background:#111;
+color:white;
+        
     }
 
-    .skill-java {
-        background: linear-gradient(135deg, #f7931e, #007396);
+
+    .hori{
+        border:1px solid #444;
+     
+  /* height: 1px;
+  background: #ccc;
+  margin: 20px 0; */
     }
+/* 
+    .Footer_Background::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        /* covers the entire div */
+        /* background: url("foot_bg.jpeg") center/cover no-repeat; */
+        filter: blur(5px);
+        /* background blur */
+        z-index: -1;
+        /* behind content */
+        opacity: 0.8;
+        background-color: #154753;
+    } */
 
-    .skill-sql {
-        background: linear-gradient(135deg, #00758f, #40b0cb);
-    }
 
-    .skill-os {
-        background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
-    }
+    /* background: linear-gradient(rgb(255, 0, 0,0.8), white ); */
 
-    .skill-network {
-        background: linear-gradient(135deg, #667eea, #764ba2);
-    }
+    .footer{
+background:#111;
+color:white;
+padding:50px 0;
+}
 
-    .skill-html {
-        background: linear-gradient(135deg, #e44d26, #f16529);
-    }
+.footer a{
+color:#bbb;
+text-decoration:none;
+transition:0.3s;
+}
 
-    .skill-css {
-        background: linear-gradient(135deg, #2965f1, #42a5f5);
-    }
+.footer a:hover{
+color:#0d6efd;
+padding-left:5px;
+}
 
-    .skill-bootstrap {
-        background: linear-gradient(135deg, #5d2c9c, #8b5ecf);
-    }
+.social-icons i{
+font-size:25px;
+margin-right:15px;
+transition:0.4s;
+}
 
-    .skill-js {
-        background: linear-gradient(135deg, #f7df1e, #ffd700);
-    }
+.social-icons i:hover{
+transform:translateY(-5px) scale(1.2);
+color:#0d6efd;
+}
 
-    .skill-php {
-        background: linear-gradient(135deg, #787cb4, #4f5bd5);
-    }
+.footer-bottom{
+border-top:1px solid #444;
+margin-top:30px;
+padding-top:20px;
+text-align:center;
+font-size:14px;
+}
 
-    .skill-ps {
-        background: linear-gradient(135deg, #282828, #00d4ff);
-    }
-
-    .skill-git {
-        background: linear-gradient(135deg, #f03a47, #ec5990);
-    }
-
-    .skill-docker {
-        background: linear-gradient(135deg, #2496ed, #0a9fd9);
-    }
-
-    .skill-aws {
-        background: linear-gradient(135deg, #ff9900, #ff9f00);
-    }
-
-    .skill-react {
-        background: linear-gradient(135deg, #61dafb, #21d4fd);
-    }
-
-    /* ANIMATIONS */
-    @keyframes animate-pulse {
-
-        0%,
-        100% {
-            transform: scale(1);
-        }
-
-        50% {
-            transform: scale(1.1);
-        }
-    }
-
-    @keyframes animate-bounce {
-
-        0%,
-        100% {
-            transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(-15px);
-        }
-    }
-
-    @keyframes animate-spin {
-        from {
-            transform: rotate(0deg);
-        }
-
-        to {
-            transform: rotate(360deg);
-        }
-    }
-
-    @keyframes animate-float {
-
-        0%,
-        100% {
-            transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(-8px);
-        }
-    }
-
-    @keyframes animate-glow {
-
-        0%,
-        100% {
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-        }
-
-        50% {
-            box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
-        }
-    }
-
-    @keyframes animate-shake {
-
-        0%,
-        100% {
-            transform: translateX(0);
-        }
-
-        25% {
-            transform: translateX(-5px);
-        }
-
-        75% {
-            transform: translateX(5px);
-        }
-    }
-
-    /* Apply animations */
-    .animate-pulse {
-        animation: animate-pulse 2s infinite;
-    }
-
-    .animate-bounce {
-        animation: animate-bounce 2s infinite;
-    }
-
-    .animate-spin {
-        animation: animate-spin 3s infinite;
-    }
-
-    .animate-float {
-        animation: animate-float 2.5s infinite;
-    }
-
-    .animate-glow {
-        animation: animate-glow 2s infinite;
-    }
-
-    .animate-shake {
-        animation: animate-shake 1.5s infinite;
-    }
