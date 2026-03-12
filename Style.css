@@ -5,21 +5,37 @@
         font-family: Arial, sans-serif;
     }
 
-    .header_section {
-        background-color: #192026;
-
+    .header_section{
+        background-color:#192026;
     }
 
-    .header_section a {
-        color: white !important;
-    }
+    .header_section a{
+        position: relative;
+        color:white !important;
+        padding:5px 0;
+        margin-left: 5px;
+}
 
-    .header_section ul li:hover a {
-        color: #FCCF58 !important;
-        text-decoration: underline #00adb5;
-        transition: all 0.2s ease-in-out;
-    }
+/* underline element */
+.header_section a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-1px;
+    width:0;
+    height:2px;
+    background:#00adb5;
+    transition:width 0.4s ease-in-out;
+}
 
+/* hover effect */
+    .header_section ul li:hover a{
+        color:#FCCF58 !important;
+}
+
+    .header_section ul li:hover a::after{
+        width:100%;
+}
     /* MAIN_AREA */
 
     .main_area {
@@ -82,7 +98,7 @@
         background-color: white !important;
     }
 
-      /* MYSKILLS */
+    /* MYSKILLS */
 
     .MySkills {
         background-color: #192026;
@@ -126,6 +142,7 @@
     .skill-html {
         background: linear-gradient(135deg, #3776ab, #ff6b35);
     }
+
     .skill-python {
         background: linear-gradient(135deg, #3776ab, #ff6b35);
     }
@@ -138,7 +155,7 @@
         background: linear-gradient(135deg, #154753, #9a9292);
     }
 
-    .skill-Networking{
+    .skill-Networking {
         background: linear-gradient(135deg, #643333, #184744);
     }
 
@@ -146,7 +163,7 @@
         background: linear-gradient(135deg, #667eea, #764ba2);
     }
 
-       .skill-bootstrap {
+    .skill-bootstrap {
         background: linear-gradient(135deg, #7b45c2, #6d6677);
     }
 
@@ -162,26 +179,21 @@
         background: linear-gradient(135deg, #282828, #00d4ff);
     }
 
-       /* .skill-docker {
+    /* .skill-docker {
         background: linear-gradient(135deg, #2496ed, #0a9fd9);
     } */
 
-      .skill-React-js {
+    .skill-React-js {
         background: linear-gradient(135deg, #1e2021, #a4a8a9);
     }
 
 
-                             /* MY_PROJECTS */
-    .Projects{
-        background:linear-gradient(#007396,#154753);
+    /* MY_PROJECTS */
+    .Projects {
+        background: linear-gradient(#007396, #154753);
     }
 
-    .MyProjects123 {
-        width: 100%;
-           
-    }
-
-    .MyProjects>.col>div {
+   .MyProjects>.col>div {
         height: 80px;
         border-radius: 12px;
         display: flex;
@@ -204,92 +216,89 @@
         transition: all 0.9s ease-in-out;
         font-size: 20px !important;
     }
-            /* CONTACTS */
-    .Contacts{
+
+    /* CONTACTS */
+    .Contacts {
         background-image: url("foot_bg.jpeg");
         /* filter: blur(5px); */
-        object-fit:fill;
-        color:white;
+        object-fit: fill;
+        color: white;
         background-attachment: fixed;
-        
+
 
     }
-    .Contacts input ,.Contacts textarea{
+
+    .Contacts input,
+    .Contacts textarea {
         width: 50%;
         margin: 0 auto;
-    }      
+    }
+
     /* Footer_Area */
 
     .Footer_Background {
-        /* position: relative; */
-        /* needed for pseudo-element */
-        /* height: 300px;
-        overflow: hidden; */
-        /* hides blur overflow */
-        background:#111;
-color:white;
-        
+        background-color: #111;
+        color:#e7dfdf;
     }
 
-
-    .hori{
-        border:1px solid #444;
-     
-  /* height: 1px;
-  background: #ccc;
-  margin: 20px 0; */
+    .Footer_Contacts a{
+        position: relative;
+        color:#e7dfdf;
+        text-decoration: none;
+        transition: color 0.4s ease;
     }
-/* 
-    .Footer_Background::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        /* covers the entire div */
-        /* background: url("foot_bg.jpeg") center/cover no-repeat; */
-        filter: blur(5px);
-        /* background blur */
-        z-index: -1;
-        /* behind content */
-        opacity: 0.8;
-        background-color: #154753;
-    } */
 
-
-    /* background: linear-gradient(rgb(255, 0, 0,0.8), white ); */
-
-    .footer{
-background:#111;
-color:white;
-padding:50px 0;
+    .Footer_Contacts a::after{
+        content:"";
+        position:absolute;
+        left:50%;
+        bottom:-3px;
+        width:0;
+        height:2px;
+        background:#00d4ff;
+        transition: all 0.4s ease;
 }
 
-.footer a{
-color:#bbb;
-text-decoration:none;
-transition:0.3s;
-}
+    .Footer_Contacts a:hover::after{
+        width:98%;
+        left:0;
+    }
+    .hori {
+        border: 1px solid #444;
+    }
 
-.footer a:hover{
-color:#0d6efd;
-padding-left:5px;
-}
+    .Quick_Links a{
+    text-decoration: none;
+    color:#e7dfdf;
+    display:inline-block;
+    transition: color 0.3s ease, padding 0.3s ease;
+    }
 
-.social-icons i{
-font-size:25px;
-margin-right:15px;
-transition:0.4s;
-}
+    .Quick_Links a:hover{
+    color:#00d4ff;
+    padding-left:10px;
+    animation: hoverJump 0.4s ease forwards;
+    }
 
-.social-icons i:hover{
-transform:translateY(-5px) scale(1.2);
-color:#0d6efd;
-}
+    @keyframes hoverJump{
+        0%{
+        transform: translateY(0) scale(1);
+        }
+        50%{
+        transform: translateY(-8px) scale(1.15);
+        }
+        100%{
+        transform: translateY(-5px) scale(1.1);
+        }
+    }
 
-.footer-bottom{
-border-top:1px solid #444;
-margin-top:30px;
-padding-top:20px;
-text-align:center;
-font-size:14px;
-}
-
+    .Social_icons i{
+        color:#acacac;
+        transition: all 0.1s ease-in-out;
+        font-size: 27px;
+    }
+    .Social_icons i:hover{                                                                                                                  
+        color:#00d4ff;
+        cursor:pointer;
+        transform:translateY(-10px) scale(1.2);
+    }
