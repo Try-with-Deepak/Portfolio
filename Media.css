@@ -4,4 +4,12 @@
         font-size: 20px;
         font-weight: 500;
     }
+
+       /* .Quick_Links{
+        padding-left: 0px !important;
+    } */
+    .Footer_Contacts h5{
+        margin-top: 10px;
+    }
+
 }
