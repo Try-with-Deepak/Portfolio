@@ -5,37 +5,38 @@
         font-family: Arial, sans-serif;
     }
 
-    .header_section{
-        background-color:#192026;
+    .header_section {
+        background-color: #192026;
     }
 
-    .header_section a{
+    .header_section a {
         position: relative;
-        color:white !important;
-        padding:5px 0;
+        color: white !important;
+        padding: 5px 0;
         margin-left: 5px;
-}
+    }
 
-/* underline element */
-.header_section a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-1px;
-    width:0;
-    height:2px;
-    background:#00adb5;
-    transition:width 0.4s ease-in-out;
-}
+    /* underline element */
+    .header_section a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 0;
+        height: 2px;
+        background: #00adb5;
+        transition: width 0.4s ease-in-out;
+    }
 
-/* hover effect */
-    .header_section ul li:hover a{
-        color:#FCCF58 !important;
-}
+    /* hover effect */
+    .header_section ul li:hover a {
+        color: #FCCF58 !important;
+    }
 
-    .header_section ul li:hover a::after{
-        width:100%;
-}
+    .header_section ul li:hover a::after {
+        width: 100%;
+    }
+
     /* MAIN_AREA */
 
     .main_area {
@@ -193,7 +194,7 @@
         background: linear-gradient(#007396, #154753);
     }
 
-   .MyProjects>.col>div {
+    .MyProjects>.col>div {
         height: 80px;
         border-radius: 12px;
         display: flex;
@@ -219,131 +220,135 @@
 
     /* CONTACTS */
 
-.contact-section{
-    background: #f1f5f9;
-    background-image: url("foot_bg.jpeg");
-    /* filter: blur(5px); */
-    object-fit: fill;
-    /* color: rgb(150, 18, 18); */
-    background-attachment: fixed;
-}
+    .contact-section {
+        background: #f1f5f9;
+        background-image: url("foot_bg.jpeg");
+        /* filter: blur(5px); */
+        object-fit: fill;
+        /* color: rgb(150, 18, 18); */
+        background-attachment: fixed;
+        overflow: hidden;
+    }
 
-.contact-box{
-    background: rgba(255,255,255,0.2);
-    border-radius: 15px;
-    border: 0px solid orange;
-    border-left-width: 10px;
-    border-right-width: 10px;
-    border-left-color:#00d4ff;
-    border-right-color:#ff9100;
-    
-}
-.btnn{
-    background-color: rgb(0, 0, 0);
-    color: white;
-    border-radius: 10px;
-    padding: 7px 12px;
-    border: none;
-    outline: none;
-   transition: all .5s ease-in-out;
-}
+    .contact-box {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        border: 0px solid orange;
+        border-left-width: 10px;
+        border-right-width: 10px;
+        border-left-color: #00d4ff;
+        border-right-color: #ff9100;
 
-.btnn:hover{
-    background-color: rgb(129, 0, 0);
-    color: white;
-}
+    }
+
+    .btnn {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border-radius: 10px;
+        padding: 7px 12px;
+        border: none;
+        outline: none;
+        transition: all .5s ease-in-out;
+    }
+
+    .btnn:hover {
+        background-color: rgb(129, 0, 0);
+        color: white;
+    }
 
     /* Footer_Area */
 
     .Footer_Background {
         background-color: #111;
-        color:#e7dfdf;
+        color: #e7dfdf;
     }
 
-    .Footer_Contacts a{
+    .Footer_Contacts a {
         position: relative;
-        color:#e7dfdf;
+        color: #e7dfdf;
         text-decoration: none;
         transition: color 0.4s ease;
     }
 
-    .Footer_Contacts a::after{
-        content:"";
-        position:absolute;
-        left:50%;
-        bottom:-3px;
-        width:0;
-        height:2px;
-        background:#00d4ff;
+    .Footer_Contacts a::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -3px;
+        width: 0;
+        height: 2px;
+        background: #00d4ff;
         transition: all 0.4s ease;
-}
+    }
 
-    .Footer_Contacts a:hover::after{
-        width:98%;
-        left:0;
+    .Footer_Contacts a:hover::after {
+        width: 98%;
+        left: 0;
     }
 
     .marquee {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-}
-
-.marquee-content {
-    display: inline-block;
-    white-space: nowrap;
-    animation: marqueeScroll 12s linear infinite;
-}
-
-@keyframes marqueeScroll {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-/* Pause on hover */
-.marquee:hover .marquee-content {
-    animation-play-state: paused;
-}
-
-    .Quick_Links a{
-    text-decoration: none;
-    color:#e7dfdf;
-    display:inline-block;
-    transition: color 0.3s ease, padding 0.3s ease;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
     }
 
-    .Quick_Links a:hover{
-    color:#00d4ff;
-    padding-left:10px;
-    animation: hoverJump 0.4s ease forwards;
+    .marquee-content {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marqueeScroll 12s linear infinite;
     }
 
-    @keyframes hoverJump{
-        0%{
-        transform: translateY(0) scale(1);
+    @keyframes marqueeScroll {
+        0% {
+            transform: translateX(100%);
         }
-        50%{
-        transform: translateY(-8px) scale(1.15);
-        }
-        100%{
-        transform: translateY(-5px) scale(1.1);
+
+        100% {
+            transform: translateX(-100%);
         }
     }
 
-    .Social_icons i{
-        color:#acacac;
+    /* Pause on hover */
+    .marquee:hover .marquee-content {
+        animation-play-state: paused;
+    }
+
+    .Quick_Links a {
+        text-decoration: none;
+        color: #e7dfdf;
+        display: inline-block;
+        transition: color 0.3s ease, padding 0.3s ease;
+    }
+
+    .Quick_Links a:hover {
+        color: #00d4ff;
+        padding-left: 10px;
+        animation: hoverJump 0.4s ease forwards;
+    }
+
+    @keyframes hoverJump {
+        0% {
+            transform: translateY(0) scale(1);
+        }
+
+        50% {
+            transform: translateY(-8px) scale(1.15);
+        }
+
+        100% {
+            transform: translateY(-5px) scale(1.1);
+        }
+    }
+
+    .Social_icons i {
+        color: #acacac;
         transition: all 0.1s ease-in-out;
         font-size: 27px;
     }
-    .Social_icons i:hover{                                                                                                                  
-        color:#00d4ff;
-        cursor:pointer;
-        transform:translateY(-10px) scale(1.2);
+
+    .Social_icons i:hover {
+        color: #00d4ff;
+        cursor: pointer;
+        transform: translateY(-10px) scale(1.2);
     }
-
-
