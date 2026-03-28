@@ -55,6 +55,12 @@
         font-weight: bolder;
     }
 
+    #element{
+        font-family:'Times New Roman', Times, serif;
+        font-weight:800;
+        color:white;
+    }
+
     .Btn_1 {
         font-size: 15px;
         background-color: red;
